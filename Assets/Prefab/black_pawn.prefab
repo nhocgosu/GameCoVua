@@ -10,9 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 549216908373019087}
   - component: {fileID: 4585841784879828402}
-  - component: {fileID: -820536197466757425}
   - component: {fileID: -2076198412193230090}
-  m_Layer: 0
+  - component: {fileID: 3716425329954411680}
+  - component: {fileID: -4808413235537718024}
+  m_Layer: 7
   m_Name: black_pawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86,19 +87,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &-820536197466757425
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4087557126811080551}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75367ddf207ca34479f39deed2346762, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isWhite: 0
 --- !u!61 &-2076198412193230090
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -144,3 +132,36 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.65, y: 0.8}
   m_EdgeRadius: 0
+--- !u!114 &3716425329954411680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4087557126811080551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75367ddf207ca34479f39deed2346762, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isWhite: 0
+  currentPos: {x: 6, y: 1}
+  isFirstMove: 1
+--- !u!114 &-4808413235537718024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4087557126811080551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efe7b04ef2245a14cb4efdd9db4f0c9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pieceLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  boardLayer:
+    serializedVersion: 2
+    m_Bits: 64

@@ -5,20 +5,15 @@ using UnityEngine;
 
 public abstract class ChessPiece : MonoBehaviour
 {
-   public bool isWhite; // Xac dinh mau sac quan co 
+   public bool isWhite; // Xac dinh mau sac quan co (trang hoac den)
+   public Vector2Int currentPos; // Vi tri hien tai cua tren ban co (hang va cot)
 
-   public abstract bool isMoveValid (Vector3 targetPos , ChessPiece[,] boradState); // Kiem tra tinh hop le cua nc di
+   // Ham truu tuong de xac dinh cach di chuyen cua quan co , moi loai se co cach di chuyen rieng
+   public abstract bool isMoveValid (Vector2Int targetPos , ChessPiece[,] boradState); // Kiem tra tinh hop le cua nc di
 
-   public virtual void MoveTo (Vector3 targetPos ){
-    // Di chuyen  quan co 
-    transform.position = targetPos;
+// Ham kiem tra xem co phai bat quan doi phuong k 
+   public bool IsOpponentPiece (ChessPiece piece){
+
+    return piece != null && piece.isWhite != this.isWhite;
    }
-
-   private void OnMouseDown() {
-    ChessGameManager gameManager = FindObjectOfType<ChessGameManager>();
-    if (gameManager != null) {
-        gameManager.SelectedPiece(this);
-    }
-   }
-
 }

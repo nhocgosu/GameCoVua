@@ -224,8 +224,7 @@ GameObject:
   m_Component:
   - component: {fileID: 699718441}
   - component: {fileID: 699718440}
-  - component: {fileID: 699718442}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ChessBoard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -245,7 +244,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   whiteTilePrefab: {fileID: 7505761996657789541, guid: 1a5eb77d9c8697b4dabd5d13dbb78406, type: 3}
-  greenTilePrefab: {fileID: 692501901033510858, guid: 51af8745299994f4bac221866d506208, type: 3}
+  blackTilePrefab: {fileID: 692501901033510858, guid: 51af8745299994f4bac221866d506208, type: 3}
+  whitePawnPrefab: {fileID: 8726026857746847547, guid: 7317f43c1aa8dbd4eb7e8af917e19f48, type: 3}
+  whiteRookPrefab: {fileID: 3735677611759616359, guid: 16879398a38ae6a459a66716929630d1, type: 3}
+  whiteKnightPrefab: {fileID: 3430962810965226674, guid: 4c948e0caba52ee449d31b43f21d876a, type: 3}
+  whiteBishopPrefab: {fileID: 1573344543130188977, guid: 6a6a093b0cae06b4ea4822af1a5bac70, type: 3}
+  whiteQueenPrefab: {fileID: 4918255954470744086, guid: 35e6f39c2e5c39343b61fcfac6e4eaae, type: 3}
+  whiteKingPrefab: {fileID: 7632677018606525163, guid: 306d2ef7a9b0e0941874ef3680558e33, type: 3}
+  blackPawnPrefab: {fileID: 4087557126811080551, guid: ae6f840c4a88fe541b8fbae429b3d2b3, type: 3}
+  blackRookPrefab: {fileID: 781456919351994196, guid: 312e0a45c79e18046bb0fb9febcb405f, type: 3}
+  blackKnightPrefab: {fileID: 7919278041348777784, guid: 9aaa5756688099d4589fefb9e489f1ae, type: 3}
+  blackBishopPrefab: {fileID: 74600225349013696, guid: 59fc62f7345e35342b77396bcfb5faba, type: 3}
+  blackQueenPrefab: {fileID: 6824438026446298703, guid: f1138f3c309dbc14fa2ba1812ea39e6f, type: 3}
+  blackKingPrefab: {fileID: 7765487662472646554, guid: 7385f5ac65f502d408960b955fd12869, type: 3}
 --- !u!4 &699718441
 Transform:
   m_ObjectHideFlags: 0
@@ -261,37 +272,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &699718442
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 699718439}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4089303335d31a3478a0e6a71ab95258, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  kingPrefab:
-  - {fileID: 7632677018606525163, guid: 306d2ef7a9b0e0941874ef3680558e33, type: 3}
-  - {fileID: 7765487662472646554, guid: 7385f5ac65f502d408960b955fd12869, type: 3}
-  queenPrefab:
-  - {fileID: 4918255954470744086, guid: 35e6f39c2e5c39343b61fcfac6e4eaae, type: 3}
-  - {fileID: 6824438026446298703, guid: f1138f3c309dbc14fa2ba1812ea39e6f, type: 3}
-  rookPrefab:
-  - {fileID: 3735677611759616359, guid: 16879398a38ae6a459a66716929630d1, type: 3}
-  - {fileID: 781456919351994196, guid: 312e0a45c79e18046bb0fb9febcb405f, type: 3}
-  knightPrefab:
-  - {fileID: 3430962810965226674, guid: 4c948e0caba52ee449d31b43f21d876a, type: 3}
-  - {fileID: 7919278041348777784, guid: 9aaa5756688099d4589fefb9e489f1ae, type: 3}
-  bishopPrefab:
-  - {fileID: 1573344543130188977, guid: 6a6a093b0cae06b4ea4822af1a5bac70, type: 3}
-  - {fileID: 74600225349013696, guid: 59fc62f7345e35342b77396bcfb5faba, type: 3}
-  pawnPrefab:
-  - {fileID: 8726026857746847547, guid: 7317f43c1aa8dbd4eb7e8af917e19f48, type: 3}
-  - {fileID: 4087557126811080551, guid: ae6f840c4a88fe541b8fbae429b3d2b3, type: 3}
---- !u!1 &2053950498
+--- !u!1 &1013984106
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -299,22 +280,21 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2053950499}
-  - component: {fileID: 2053950500}
+  - component: {fileID: 1013984108}
   m_Layer: 0
-  m_Name: ChessGameManager
+  m_Name: ChessController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2053950499
+--- !u!4 &1013984108
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2053950498}
+  m_GameObject: {fileID: 1013984106}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -323,22 +303,10 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2053950500
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2053950498}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4821e318e1293142ba2b62f1fc9d5a6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 519420032}
-  - {fileID: 2053950499}
   - {fileID: 699718441}
+  - {fileID: 1013984108}

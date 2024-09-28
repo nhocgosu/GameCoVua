@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6035693118620220318}
   - component: {fileID: 8918424089530149640}
   - component: {fileID: 7964390603705491102}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: black_king
   m_TagString: Untagged
   m_Icon: {fileID: 0}

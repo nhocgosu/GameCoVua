@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3744029711740933899}
   - component: {fileID: 7879001418743864049}
   - component: {fileID: -1356888781348079524}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: black_bishop
   m_TagString: Untagged
   m_Icon: {fileID: 0}

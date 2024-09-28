@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4747701667471592399}
   - component: {fileID: 2730849849136114177}
   - component: {fileID: 4239806117330356807}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: white_bishop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
